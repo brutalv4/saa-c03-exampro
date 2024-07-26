@@ -3,3 +3,8 @@ AWS_CLI_AUTO_PROMPT = "on-partial"
 
 [tools]
 awscli = "latest"
+
+[tasks.setup-check]
+description = "first"
+run = "aws sts get-caller-identity"
+alias = "check"
