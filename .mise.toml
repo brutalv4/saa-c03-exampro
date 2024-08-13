@@ -9,3 +9,7 @@ awscli = "latest"
 description = "first"
 run = "aws sts get-caller-identity"
 alias = "check"
+
+[tasks.autocompletion]
+description = "enable autocompletion for AWS CLI"
+run = "complete -C $(which aws_completer) aws"
